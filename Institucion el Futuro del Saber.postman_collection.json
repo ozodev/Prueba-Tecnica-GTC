@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "0f6fad1b-ff4d-484a-9191-65dcd302d50e",
+		"name": "Institucion el Futuro del Saber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20706530"
+	},
+	"item": [
+		{
+			"name": "Dane",
+			"item": [
+				{
+					"name": "Danes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/dane"
+					},
+					"response": []
+				},
+				{
+					"name": "Dane por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/dane/7"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Dane",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"descripcion\": \"Argentina\",\r\n    \"tipoDane\": {\r\n        \"id\": 1,\r\n        \"descripcion\": \"Pais\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/dane"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Dane",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"descripcion\": \"Antofagastaaa\",\r\n    \"tipoDane\": {\r\n        \"id\": 1,\r\n        \"descripcion\": \"Pais\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/dane/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Dane",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/dane/7"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipo Dane",
+			"item": [
+				{
+					"name": "Tipo Danes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/tipo-dane"
+					},
+					"response": []
+				},
+				{
+					"name": "Tipo dane por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/tipo-dane/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Tipo Dane",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"descripcion\": \"Custom\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/tipo-dane"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar tipo Dane",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"Personalizado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/tipo-dane/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Dane",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/tipo-dane/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipo Documento",
+			"item": [
+				{
+					"name": "Tipo Documento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/tipo-documento"
+					},
+					"response": []
+				},
+				{
+					"name": "Tipo Documento por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/tipo-documento/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Tipo Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"descripcion\": \"Pasaporte\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/tipo-documento"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar tipo Documento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"Passport\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/tipo-documento/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Tipo Documento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/tipo-documento/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipo Documento Copy",
+			"item": [
+				{
+					"name": "Grados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/grado"
+					},
+					"response": []
+				},
+				{
+					"name": "Grados por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/grado/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Tipo Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"descripcion\": \"Once\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/grado"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar tipo Documento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"Once\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/grado/11"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Tipo Documento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/grado/11"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estudiantes",
+			"item": [
+				{
+					"name": "Estudiantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/estudiantes"
+					},
+					"response": []
+				},
+				{
+					"name": "Estudiantes por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/estudiantes/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Tipo Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"numeroDocumento\": \"123456789\",\r\n  \"nombres\": \"Juan\",\r\n  \"apellidos\": \"Pérez\",\r\n  \"email\": \"juan.perez@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/estudiantes"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar tipo Documento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"Once\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/grado/11"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Tipo Documento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/grado/11"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

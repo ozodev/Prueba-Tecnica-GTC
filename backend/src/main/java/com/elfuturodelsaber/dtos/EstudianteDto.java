@@ -1,5 +1,6 @@
 package com.elfuturodelsaber.dtos;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -14,5 +15,9 @@ public class EstudianteDto {
     private String nombres;
     private String apellidos;
     private String email;
+    private String celular;
+    private String fijo;
+    private String direccion;
+    private LocalDateTime fechaNacimiento;
     private List<Long> asignaturasIds;
 }

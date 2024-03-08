@@ -4,3 +4,5 @@ backend/mvnw
 backend/mvnw.cmd
 front/node_modules
 front/.vscode
+*.pack
+front/.angular
